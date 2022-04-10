@@ -35,6 +35,7 @@ Name: 			boot
 Version: 		v1.3.6.1
 Date: 			May 11 2021
 Time: 			09:07:45
+
 """
 
 alarmcount = """
@@ -353,6 +354,10 @@ commands = {
     "about": {
         "output": about,
         "help": "Display about information",
+    },
+    "alarmcount": {
+        "output": alarmcount,
+        "help": "Display alarm count",
     },
     "boot": {
         "output": boot,
