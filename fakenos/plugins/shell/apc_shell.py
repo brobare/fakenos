@@ -11,7 +11,10 @@ class APCShell(Cmd):
     use_rawinput = False
 
     commands = {
-        "exit": {"output": True, "help": "exist commands shell"},
+        "exit": {
+            "output": True,
+            "help": "exist commands shell",
+        },
         "default": {
             "output": "E101: Command Not Found",
             "help": "Output to print for unknown commands",
