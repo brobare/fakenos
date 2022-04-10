@@ -8,8 +8,8 @@ about = """
 E000: Success
 Hardware Factory
 ---------------
-Model Number: 		AP9640
-Serial Number: 		ZA123412341234
+Model Number:		AP9640
+Serial Number:		ZA123412341234
 Hardware Revision: 	5
 Manufacture Date: 	01/23/2021
 MAC Address: 		28 29 86 47 69 82
@@ -44,10 +44,10 @@ AlarmCount: 1
 
 boot = """
 E000: Success
-Boot Mode:	    manual
+Boot Mode:		manual
 DHCP Cookie:	disabled
-Vendor Class: 	APC
-Client ID: 	    28 29 86 47 69 82
+Vendor Class:	APC
+Client ID:		28 29 86 47 69 82
 User Class: 	SU
 
 """
@@ -55,19 +55,19 @@ User Class: 	SU
 console = """
 E000: Success
 
-Boot Mode:	    manual
+Boot Mode:		manual
 DHCP Cookie:	disabled
 Vendor Class: 	APC
-Client ID: 	    28 29 86 47 69 82
+Client ID:		28 29 86 47 69 82
 User Class: 	SU
 
 apc>console
 E000: Success
-Telnet:      disabled
-SSH:         enabled
-Telnet Port: 23
-SSH Port:    22
-Baud Rate:   9600
+Telnet:			disabled
+SSH:			enabled
+Telnet Port:	23
+SSH Port:		22
+Baud Rate:		9600
 
 """
 
@@ -82,16 +82,16 @@ Time Zone: -09:00
 
 dns = f"""
 E000: Success
-Active Primary DNS Server:	    0.0.0.0
+Active Primary DNS Server:		0.0.0.0
 Active Secondary DNS Server:	0.0.0.0
 
 Override Manual DNS Settings:	enabled
-Primary DNS Server:		        0.0.0.0
-Secondary DNS Server:		    0.0.0.0
-Domain Name:			        example.com
-Domain Name IPv6:		        example.com
-System Name Sync: 		        Enabled
-Host Name:			            {hostname}
+Primary DNS Server:				0.0.0.0
+Secondary DNS Server:			0.0.0.0
+Domain Name:					example.com
+Domain Name IPv6:				example.com
+System Name Sync:				Enabled
+Host Name:						{hostname}
 
 """
 
@@ -141,12 +141,12 @@ Current Port Speed: 1000 Full_Duplex
 
 radius = """
 E000: Success
-Access: 			        RADIUS, then Local
-Primary Server: 		    192.0.2.1
+Access:						RADIUS, then Local
+Primary Server:				192.0.2.1
 Primary Server Port: 		1812
 Primary Server Secret: 		<Password Hidden>
 Primary Server Timeout: 	5
-Secondary Server: 		    192.0.2.1
+Secondary Server:			192.0.2.1
 Secondary Server Port: 		1812
 Secondary Server Secret: 	<Password Hidden>
 Secondary Server Timeout: 	5
@@ -169,9 +169,9 @@ External Battery SKU: SMX48RMBP2U
 """
 
 session = """
-User              Interface         Address           Logged In Time    ID
+User			Interface			Address			Logged In Time	ID
 -------------------------------------------------------------------------------
-user              SSH               192.0.2.1         00:07:30          225
+user			SSH					192.0.2.1		00:07:30		225
 E000: Success
 
 """
@@ -179,11 +179,11 @@ E000: Success
 smtp = """
 E000: Success
 
-  From: 	    address@example.com
-  Server: 	    mail.example.com
-  Port: 	    25
-  Auth: 	    disabled
-  User: 	    User
+  From:			address@example.com
+  Server:		mail.example.com
+  Port:			25
+  Auth:			disabled
+  User:			User
   Password: 	<not set>
   Encryption: 	none
   Req. Cert: 	disabled
@@ -193,28 +193,28 @@ E000: Success
 
 snmp = """
 E000: Success
-  SNMPv1:     enabled
+  SNMPv1:			enabled
 
 Access Control Summary:
   Access Control #:	1
   Community:		public
   Access Type:		read
-  Address:		    192.0.2.255
+  Address:			192.0.2.255
 
   Access Control #:	2
   Community:		priavte
   Access Type:		read
-  Address:		    0.0.0.0
+  Address:			0.0.0.0
 
   Access Control #:	3
   Community:		public
   Access Type:		read
-  Address:		    0.0.0.0
+  Address:			0.0.0.0
 
   Access Control #:	4
   Community:
   Access Type:		disabled
-  Address:		    0.0.0.0
+  Address:			0.0.0.0
 
 
 """
@@ -224,7 +224,7 @@ E000: Success
 
 SNMP Trap Configuration
 
-  Index: 	    1
+  Index:		1
   Receiver IP: 	192.0.2.1
   Community: 	public
   Trap Type: 	SNMPV1
@@ -243,47 +243,47 @@ SNMPv3 Configuration
 
 SNMPv3 User Profiles
 
-  Index: 		        1
-  User Name: 		    apc snmp profile1
-  Authentication: 	    None
-  Encryption: 		    None
+  Index:				1
+  User Name:			apc snmp profile1
+  Authentication:		None
+  Encryption:			None
 
-  Index: 		        2
-  User Name: 		    apc snmp profile2
-  Authentication: 	    None
-  Encryption: 		    None
+  Index:				2
+  User Name:			apc snmp profile2
+  Authentication:		None
+  Encryption:			None
 
-  Index: 		        3
-  User Name: 		    apc snmp profile3
-  Authentication: 	    None
-  Encryption: 		    None
+  Index:				3
+  User Name:			apc snmp profile3
+  Authentication:		None
+  Encryption:			None
 
-  Index: 		        4
-  User Name: 		    apc snmp profile4
-  Authentication:   	None
-  Encryption: 		    None
+  Index:				4
+  User Name:			apc snmp profile4
+  Authentication:		None
+  Encryption:			None
 
 
 SNMPv3 Access Control
 
-  Index: 		        1
-  User Name: 		    apc snmp profile1
-  Access: 		        disabled
+  Index:				1
+  User Name:			apc snmp profile1
+  Access:				disabled
   NMS IP/Host Name: 	0.0.0.0
 
-  Index: 		        2
-  User Name: 		    apc snmp profile2
-  Access: 		        disabled
+  Index:				2
+  User Name:			apc snmp profile2
+  Access:				disabled
   NMS IP/Host Name: 	0.0.0.0
 
-  Index: 		        3
-  User Name: 		    apc snmp profile3
-  Access: 		        disabled
+  Index:				3
+  User Name:			apc snmp profile3
+  Access:				disabled
   NMS IP/Host Name: 	0.0.0.0
 
-  Index: 		        4
-  User Name: 		    apc snmp profile4
-  Access: 		        disabled
+  Index:				4
+  User Name:			apc snmp profile4
+  Access:				disabled
   NMS IP/Host Name: 	0.0.0.0
 
 """
@@ -291,17 +291,17 @@ SNMPv3 Access Control
 system = f"""
 E000: Success
 Host Name Sync: Enabled
-Name: 		    {hostname}
-Contact: 	    noc@example.com
-Location: 	    1234 Any Street, Any City, Any State, USA
+Name:			{hostname}
+Contact:		noc@example.com
+Location:		1234 Any Street, Any City, Any State, USA
 Message:
-DateTime: 	    04/10/2022:10:36:08
-User: 		    username
-Up Time: 	    16 Days 9 Hours 26 Minutes
-Stat: 		    P+ N4+ N6+ A+
-Bootmon: 	    boot:v1.3.6.1
-AOS: 		    aos:v1.4.2.1
-App: 		    su:v1.4.2.1
+DateTime:		04/10/2022:10:36:08
+User:			username
+Up Time:		16 Days 9 Hours 26 Minutes
+Stat:			P+ N4+ N6+ A+
+Bootmon:		boot:v1.3.6.1
+AOS:			aos:v1.4.2.1
+App:			su:v1.4.2.1
 
 """
 
@@ -317,12 +317,12 @@ Active IPv4 Settings
 Manually Configured IPv4 Settings
 ---------------------------------
 
-  IPv4:			    enabled
+  IPv4:				enabled
   Manual Settings:	enabled
 
   IPv4 Address:		192.0.2.2
   Subnet Mask:		255.255.255.0
-  Gateway:		    192.0.2.1
+  Gateway:			192.0.2.1
   MAC Address:		28 29 86 47 69 82
   Domain Name:		example.com
   Host Name:		{hostname}
@@ -331,19 +331,19 @@ Manually Configured IPv4 Settings
 
 user = """
 E000: Success
-Name                    User Type                      Status
-----                    ---------                      ------
-apc                     Super User                     Enabled
+Name					User Type						Status
+----					---------						------
+apc						Super User						Enabled
 
 """
 
 web = """
 E000: Success
-Http:			        disabled
-Https:			        enabled
-Http Port: 		        80
-Https Port: 		    443
-Minimum Protocol:	    TLS1.2
+Http:					disabled
+Https:					enabled
+Http Port:				80
+Https Port:				443
+Minimum Protocol:		TLS1.2
 Limited Status Access:	disabled
 Lim. Status Page Used:	n/a
 TLS1.2 Cipher Suite Filter:	4
