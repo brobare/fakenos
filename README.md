@@ -32,11 +32,10 @@ ssh 127.0.0.1 -l user -p 6001
 
 ## Adding vendors
 
-**Files that need to be updated are:**  
-
-    1) Add the code for your vendor to `fakenos/plugins/nos/yourvendor.py` 
-    2) Add the import in `fakenos/plugins/nos/__init__.py` 
-    3) Update `nos_plugins` dictionary in `fakenos/plugins/nos/__init__.py ` 
+Files that need to updated are:  
+    1) Add the code for your vendor to `fakenos/plugins/nos/yourvendor.py`  
+    2) Add the import in `fakenos/plugins/nos/__init__.py`  
+    3) Update `nos_plugins` dictionary in `fakenos/plugins/nos/__init__.py`  
 
 ## Creating instances with different vendors
 
