@@ -11,7 +11,7 @@ board_show_info = """
 
 Product name       : AEN-1000-GE
 MAC base address   : 00:15:AD:16:5F:38
-Unit identifier    : {base_prompt}
+Unit identifier    : {hostname}
 Firmware version   : AEN_4.9.3.2_30737
 Serial number      : G123-1234
 Assembly           : 500-005-14:8:2:00
